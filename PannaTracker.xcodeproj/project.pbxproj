@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		300DCD581CF501CB00361625 /* Tunnler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300DCD571CF501CB00361625 /* Tunnler.swift */; };
+		300DCD5A1CF50D8B00361625 /* GetunnelterSpielerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300DCD591CF50D8B00361625 /* GetunnelterSpielerTableViewCell.swift */; };
+		300DCD5C1CF5184D00361625 /* GetunnelterSpielerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300DCD5B1CF5184D00361625 /* GetunnelterSpielerTableViewController.swift */; };
+		300DCD5E1CF5C54200361625 /* TeamListe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300DCD5D1CF5C54200361625 /* TeamListe.swift */; };
+		300DCD601CF5D43600361625 /* KaderCreateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300DCD5F1CF5D43600361625 /* KaderCreateHelper.swift */; };
+		300DCD731CF7427D00361625 /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 300DCD711CF7427D00361625 /* CoreDataModel.xcdatamodeld */; };
+		300DCD781CF744A000361625 /* Tunnler+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300DCD741CF744A000361625 /* Tunnler+CoreDataProperties.swift */; };
+		300DCD791CF744A000361625 /* Player+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300DCD751CF744A000361625 /* Player+CoreDataProperties.swift */; };
+		300DCD7A1CF744A000361625 /* TeamListe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300DCD761CF744A000361625 /* TeamListe+CoreDataProperties.swift */; };
+		300DCD7B1CF744A000361625 /* Team+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300DCD771CF744A000361625 /* Team+CoreDataProperties.swift */; };
+		300DCD7D1CFB8D9000361625 /* TunnlerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300DCD7C1CFB8D9000361625 /* TunnlerTableViewController.swift */; };
+		300DCD7F1CFB8DA100361625 /* TunnlerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300DCD7E1CFB8DA100361625 /* TunnlerTableViewCell.swift */; };
+		300DCD831CFB9D6C00361625 /* SpielerRanglisteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300DCD821CFB9D6C00361625 /* SpielerRanglisteTableViewCell.swift */; };
+		300DCD871CFC9B3A00361625 /* SpielerRanglisteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300DCD861CFC9B3A00361625 /* SpielerRanglisteViewController.swift */; };
+		300DCD8B1CFF239E00361625 /* Kader.txt in Resources */ = {isa = PBXBuildFile; fileRef = 300DCD8A1CFF239E00361625 /* Kader.txt */; };
+		3019446C1CF0851E0039A172 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3019446B1CF0851E0039A172 /* AppDelegate.swift */; };
+		3019446E1CF0851E0039A172 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3019446D1CF0851E0039A172 /* ViewController.swift */; };
+		301944711CF0851E0039A172 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3019446F1CF0851E0039A172 /* Main.storyboard */; };
+		301944731CF0851F0039A172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 301944721CF0851F0039A172 /* Assets.xcassets */; };
+		301944761CF0851F0039A172 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301944741CF0851F0039A172 /* LaunchScreen.storyboard */; };
+		301944811CF0851F0039A172 /* PannaTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301944801CF0851F0039A172 /* PannaTrackerTests.swift */; };
+		3019448C1CF0851F0039A172 /* PannaTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3019448B1CF0851F0039A172 /* PannaTrackerUITests.swift */; };
+		3019449C1CF091DF0039A172 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3019449B1CF091DF0039A172 /* Player.swift */; };
+		3019449E1CF091F20039A172 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3019449D1CF091F20039A172 /* Team.swift */; };
+		301944A21CF09D5F0039A172 /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301944A11CF09D5F0039A172 /* TeamTableViewCell.swift */; };
+		301944A41CF0A3D30039A172 /* TeamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301944A31CF0A3D30039A172 /* TeamTableViewController.swift */; };
+		30F07CFE1CF1BC8D009E2051 /* DataFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F07CFD1CF1BC8D009E2051 /* DataFormatter.swift */; };
+		30F07D001CF25426009E2051 /* PlayerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F07CFF1CF25426009E2051 /* PlayerTableViewController.swift */; };
+		30F07D021CF2547E009E2051 /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F07D011CF2547E009E2051 /* PlayerTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3019447D1CF0851F0039A172 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301944601CF0851E0039A172 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 301944671CF0851E0039A172;
+			remoteInfo = PannaTracker;
+		};
+		301944881CF0851F0039A172 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301944601CF0851E0039A172 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 301944671CF0851E0039A172;
+			remoteInfo = PannaTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		300DCD571CF501CB00361625 /* Tunnler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tunnler.swift; sourceTree = "<group>"; };
+		300DCD591CF50D8B00361625 /* GetunnelterSpielerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetunnelterSpielerTableViewCell.swift; sourceTree = "<group>"; };
+		300DCD5B1CF5184D00361625 /* GetunnelterSpielerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetunnelterSpielerTableViewController.swift; sourceTree = "<group>"; };
+		300DCD5D1CF5C54200361625 /* TeamListe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamListe.swift; sourceTree = "<group>"; };
+		300DCD5F1CF5D43600361625 /* KaderCreateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KaderCreateHelper.swift; sourceTree = "<group>"; };
+		300DCD721CF7427D00361625 /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		300DCD741CF744A000361625 /* Tunnler+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tunnler+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		300DCD751CF744A000361625 /* Player+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Player+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		300DCD761CF744A000361625 /* TeamListe+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TeamListe+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		300DCD771CF744A000361625 /* Team+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Team+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		300DCD7C1CFB8D9000361625 /* TunnlerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TunnlerTableViewController.swift; sourceTree = "<group>"; };
+		300DCD7E1CFB8DA100361625 /* TunnlerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TunnlerTableViewCell.swift; sourceTree = "<group>"; };
+		300DCD821CFB9D6C00361625 /* SpielerRanglisteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpielerRanglisteTableViewCell.swift; sourceTree = "<group>"; };
+		300DCD861CFC9B3A00361625 /* SpielerRanglisteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpielerRanglisteViewController.swift; sourceTree = "<group>"; };
+		300DCD8A1CFF239E00361625 /* Kader.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kader.txt; sourceTree = "<group>"; };
+		301944681CF0851E0039A172 /* PannaTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PannaTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3019446B1CF0851E0039A172 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3019446D1CF0851E0039A172 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		301944701CF0851E0039A172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		301944721CF0851F0039A172 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		301944751CF0851F0039A172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		301944771CF0851F0039A172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3019447C1CF0851F0039A172 /* PannaTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PannaTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		301944801CF0851F0039A172 /* PannaTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PannaTrackerTests.swift; sourceTree = "<group>"; };
+		301944821CF0851F0039A172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		301944871CF0851F0039A172 /* PannaTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PannaTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3019448B1CF0851F0039A172 /* PannaTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PannaTrackerUITests.swift; sourceTree = "<group>"; };
+		3019448D1CF0851F0039A172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3019449B1CF091DF0039A172 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		3019449D1CF091F20039A172 /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		301944A11CF09D5F0039A172 /* TeamTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
+		301944A31CF0A3D30039A172 /* TeamTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamTableViewController.swift; sourceTree = "<group>"; };
+		30F07CFD1CF1BC8D009E2051 /* DataFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFormatter.swift; sourceTree = "<group>"; };
+		30F07CFF1CF25426009E2051 /* PlayerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTableViewController.swift; sourceTree = "<group>"; };
+		30F07D011CF2547E009E2051 /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		301944651CF0851E0039A172 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		301944791CF0851F0039A172 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		301944841CF0851F0039A172 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3019445F1CF0851E0039A172 = {
+			isa = PBXGroup;
+			children = (
+				3019446A1CF0851E0039A172 /* PannaTracker */,
+				3019447F1CF0851F0039A172 /* PannaTrackerTests */,
+				3019448A1CF0851F0039A172 /* PannaTrackerUITests */,
+				301944691CF0851E0039A172 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		301944691CF0851E0039A172 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				301944681CF0851E0039A172 /* PannaTracker.app */,
+				3019447C1CF0851F0039A172 /* PannaTrackerTests.xctest */,
+				301944871CF0851F0039A172 /* PannaTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3019446A1CF0851E0039A172 /* PannaTracker */ = {
+			isa = PBXGroup;
+			children = (
+				3019446B1CF0851E0039A172 /* AppDelegate.swift */,
+				3019446F1CF0851E0039A172 /* Main.storyboard */,
+				30F07D031CF2549C009E2051 /* ViewController */,
+				30F07D051CF254C5009E2051 /* TableViewCells */,
+				30F07D041CF254B3009E2051 /* Model */,
+				301944721CF0851F0039A172 /* Assets.xcassets */,
+				301944741CF0851F0039A172 /* LaunchScreen.storyboard */,
+				30F07D061CF254DF009E2051 /* HelperClasses */,
+				30F07D071CF254EB009E2051 /* Ressources */,
+				301944771CF0851F0039A172 /* Info.plist */,
+				300DCD711CF7427D00361625 /* CoreDataModel.xcdatamodeld */,
+				300DCD741CF744A000361625 /* Tunnler+CoreDataProperties.swift */,
+				300DCD751CF744A000361625 /* Player+CoreDataProperties.swift */,
+				300DCD761CF744A000361625 /* TeamListe+CoreDataProperties.swift */,
+				300DCD771CF744A000361625 /* Team+CoreDataProperties.swift */,
+			);
+			path = PannaTracker;
+			sourceTree = "<group>";
+		};
+		3019447F1CF0851F0039A172 /* PannaTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				301944801CF0851F0039A172 /* PannaTrackerTests.swift */,
+				301944821CF0851F0039A172 /* Info.plist */,
+			);
+			path = PannaTrackerTests;
+			sourceTree = "<group>";
+		};
+		3019448A1CF0851F0039A172 /* PannaTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3019448B1CF0851F0039A172 /* PannaTrackerUITests.swift */,
+				3019448D1CF0851F0039A172 /* Info.plist */,
+			);
+			path = PannaTrackerUITests;
+			sourceTree = "<group>";
+		};
+		30F07D031CF2549C009E2051 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				300DCD7C1CFB8D9000361625 /* TunnlerTableViewController.swift */,
+				301944A31CF0A3D30039A172 /* TeamTableViewController.swift */,
+				30F07CFF1CF25426009E2051 /* PlayerTableViewController.swift */,
+				3019446D1CF0851E0039A172 /* ViewController.swift */,
+				300DCD5B1CF5184D00361625 /* GetunnelterSpielerTableViewController.swift */,
+				300DCD861CFC9B3A00361625 /* SpielerRanglisteViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		30F07D041CF254B3009E2051 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3019449B1CF091DF0039A172 /* Player.swift */,
+				3019449D1CF091F20039A172 /* Team.swift */,
+				300DCD571CF501CB00361625 /* Tunnler.swift */,
+				300DCD5D1CF5C54200361625 /* TeamListe.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		30F07D051CF254C5009E2051 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				301944A11CF09D5F0039A172 /* TeamTableViewCell.swift */,
+				30F07D011CF2547E009E2051 /* PlayerTableViewCell.swift */,
+				300DCD591CF50D8B00361625 /* GetunnelterSpielerTableViewCell.swift */,
+				300DCD7E1CFB8DA100361625 /* TunnlerTableViewCell.swift */,
+				300DCD821CFB9D6C00361625 /* SpielerRanglisteTableViewCell.swift */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
+		30F07D061CF254DF009E2051 /* HelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+				30F07CFD1CF1BC8D009E2051 /* DataFormatter.swift */,
+				300DCD5F1CF5D43600361625 /* KaderCreateHelper.swift */,
+			);
+			name = HelperClasses;
+			sourceTree = "<group>";
+		};
+		30F07D071CF254EB009E2051 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				300DCD8A1CFF239E00361625 /* Kader.txt */,
+			);
+			name = Ressources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		301944671CF0851E0039A172 /* PannaTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 301944901CF0851F0039A172 /* Build configuration list for PBXNativeTarget "PannaTracker" */;
+			buildPhases = (
+				301944641CF0851E0039A172 /* Sources */,
+				301944651CF0851E0039A172 /* Frameworks */,
+				301944661CF0851E0039A172 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PannaTracker;
+			productName = PannaTracker;
+			productReference = 301944681CF0851E0039A172 /* PannaTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3019447B1CF0851F0039A172 /* PannaTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 301944931CF0851F0039A172 /* Build configuration list for PBXNativeTarget "PannaTrackerTests" */;
+			buildPhases = (
+				301944781CF0851F0039A172 /* Sources */,
+				301944791CF0851F0039A172 /* Frameworks */,
+				3019447A1CF0851F0039A172 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3019447E1CF0851F0039A172 /* PBXTargetDependency */,
+			);
+			name = PannaTrackerTests;
+			productName = PannaTrackerTests;
+			productReference = 3019447C1CF0851F0039A172 /* PannaTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		301944861CF0851F0039A172 /* PannaTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 301944961CF0851F0039A172 /* Build configuration list for PBXNativeTarget "PannaTrackerUITests" */;
+			buildPhases = (
+				301944831CF0851F0039A172 /* Sources */,
+				301944841CF0851F0039A172 /* Frameworks */,
+				301944851CF0851F0039A172 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				301944891CF0851F0039A172 /* PBXTargetDependency */,
+			);
+			name = PannaTrackerUITests;
+			productName = PannaTrackerUITests;
+			productReference = 301944871CF0851F0039A172 /* PannaTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		301944601CF0851E0039A172 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Danny Baule";
+				TargetAttributes = {
+					301944671CF0851E0039A172 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = DCMN9EDS3P;
+					};
+					3019447B1CF0851F0039A172 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = DCMN9EDS3P;
+						TestTargetID = 301944671CF0851E0039A172;
+					};
+					301944861CF0851F0039A172 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = DCMN9EDS3P;
+						TestTargetID = 301944671CF0851E0039A172;
+					};
+				};
+			};
+			buildConfigurationList = 301944631CF0851E0039A172 /* Build configuration list for PBXProject "PannaTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3019445F1CF0851E0039A172;
+			productRefGroup = 301944691CF0851E0039A172 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				301944671CF0851E0039A172 /* PannaTracker */,
+				3019447B1CF0851F0039A172 /* PannaTrackerTests */,
+				301944861CF0851F0039A172 /* PannaTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		301944661CF0851E0039A172 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301944761CF0851F0039A172 /* LaunchScreen.storyboard in Resources */,
+				301944731CF0851F0039A172 /* Assets.xcassets in Resources */,
+				300DCD8B1CFF239E00361625 /* Kader.txt in Resources */,
+				301944711CF0851E0039A172 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3019447A1CF0851F0039A172 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		301944851CF0851F0039A172 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		301944641CF0851E0039A172 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				300DCD5E1CF5C54200361625 /* TeamListe.swift in Sources */,
+				300DCD791CF744A000361625 /* Player+CoreDataProperties.swift in Sources */,
+				3019449C1CF091DF0039A172 /* Player.swift in Sources */,
+				3019446E1CF0851E0039A172 /* ViewController.swift in Sources */,
+				300DCD5C1CF5184D00361625 /* GetunnelterSpielerTableViewController.swift in Sources */,
+				3019449E1CF091F20039A172 /* Team.swift in Sources */,
+				300DCD601CF5D43600361625 /* KaderCreateHelper.swift in Sources */,
+				301944A41CF0A3D30039A172 /* TeamTableViewController.swift in Sources */,
+				300DCD7D1CFB8D9000361625 /* TunnlerTableViewController.swift in Sources */,
+				300DCD581CF501CB00361625 /* Tunnler.swift in Sources */,
+				30F07CFE1CF1BC8D009E2051 /* DataFormatter.swift in Sources */,
+				300DCD871CFC9B3A00361625 /* SpielerRanglisteViewController.swift in Sources */,
+				301944A21CF09D5F0039A172 /* TeamTableViewCell.swift in Sources */,
+				30F07D021CF2547E009E2051 /* PlayerTableViewCell.swift in Sources */,
+				30F07D001CF25426009E2051 /* PlayerTableViewController.swift in Sources */,
+				300DCD781CF744A000361625 /* Tunnler+CoreDataProperties.swift in Sources */,
+				3019446C1CF0851E0039A172 /* AppDelegate.swift in Sources */,
+				300DCD5A1CF50D8B00361625 /* GetunnelterSpielerTableViewCell.swift in Sources */,
+				300DCD7B1CF744A000361625 /* Team+CoreDataProperties.swift in Sources */,
+				300DCD831CFB9D6C00361625 /* SpielerRanglisteTableViewCell.swift in Sources */,
+				300DCD7A1CF744A000361625 /* TeamListe+CoreDataProperties.swift in Sources */,
+				300DCD731CF7427D00361625 /* CoreDataModel.xcdatamodeld in Sources */,
+				300DCD7F1CFB8DA100361625 /* TunnlerTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		301944781CF0851F0039A172 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301944811CF0851F0039A172 /* PannaTrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		301944831CF0851F0039A172 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3019448C1CF0851F0039A172 /* PannaTrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3019447E1CF0851F0039A172 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 301944671CF0851E0039A172 /* PannaTracker */;
+			targetProxy = 3019447D1CF0851F0039A172 /* PBXContainerItemProxy */;
+		};
+		301944891CF0851F0039A172 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 301944671CF0851E0039A172 /* PannaTracker */;
+			targetProxy = 301944881CF0851F0039A172 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3019446F1CF0851E0039A172 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				301944701CF0851E0039A172 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		301944741CF0851F0039A172 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				301944751CF0851F0039A172 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3019448E1CF0851F0039A172 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3019448F1CF0851F0039A172 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		301944911CF0851F0039A172 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = PannaTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.DannyBaule.PannaTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		301944921CF0851F0039A172 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = PannaTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.DannyBaule.PannaTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		301944941CF0851F0039A172 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PannaTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.DannyBaule.PannaTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PannaTracker.app/PannaTracker";
+			};
+			name = Debug;
+		};
+		301944951CF0851F0039A172 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PannaTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.DannyBaule.PannaTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PannaTracker.app/PannaTracker";
+			};
+			name = Release;
+		};
+		301944971CF0851F0039A172 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PannaTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.DannyBaule.PannaTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PannaTracker;
+			};
+			name = Debug;
+		};
+		301944981CF0851F0039A172 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PannaTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.DannyBaule.PannaTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PannaTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		301944631CF0851E0039A172 /* Build configuration list for PBXProject "PannaTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3019448E1CF0851F0039A172 /* Debug */,
+				3019448F1CF0851F0039A172 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		301944901CF0851F0039A172 /* Build configuration list for PBXNativeTarget "PannaTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				301944911CF0851F0039A172 /* Debug */,
+				301944921CF0851F0039A172 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		301944931CF0851F0039A172 /* Build configuration list for PBXNativeTarget "PannaTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				301944941CF0851F0039A172 /* Debug */,
+				301944951CF0851F0039A172 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		301944961CF0851F0039A172 /* Build configuration list for PBXNativeTarget "PannaTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				301944971CF0851F0039A172 /* Debug */,
+				301944981CF0851F0039A172 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		300DCD711CF7427D00361625 /* CoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				300DCD721CF7427D00361625 /* CoreDataModel.xcdatamodel */,
+			);
+			currentVersion = 300DCD721CF7427D00361625 /* CoreDataModel.xcdatamodel */;
+			path = CoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 301944601CF0851E0039A172 /* Project object */;
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15E65" minimumToolsVersion="Xcode 7.0">
+    <entity name="Player" representedClassName=".Player" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nummer" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="team" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Team" syncable="YES"/>
+        <relationship name="tunnlerHat" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tunnler" syncable="YES"/>
+        <relationship name="tunnlerWurde" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tunnler" syncable="YES"/>
+    </entity>
+    <entity name="Team" representedClassName=".Team" syncable="YES">
+        <attribute name="flagge" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="kuerzel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tunnlerHatCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="tunnlerWurdeCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="spieler" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Player" syncable="YES"/>
+    </entity>
+    <entity name="TeamListe" representedClassName=".TeamListe" syncable="YES">
+        <relationship name="team" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Team" syncable="YES"/>
+    </entity>
+    <entity name="Tunnler" representedClassName=".Tunnler" syncable="YES">
+        <attribute name="zeitpunkt" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="hatGetunnelt" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Player" syncable="YES"/>
+        <relationship name="wurdeGetunnelt" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Player" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Player" positionX="-315" positionY="279" width="128" height="118"/>
+        <element name="Team" positionX="-308" positionY="27" width="128" height="133"/>
+        <element name="Tunnler" positionX="-18" positionY="126" width="128" height="88"/>
+        <element name="TeamListe" positionX="-533" positionY="30" width="128" height="58"/>
+    </elements>
+</model>
